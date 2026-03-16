@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service — InboxReaper</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0a0a0a; --surface: #111111; --border: #222222;
+      --text: #f0ede8; --muted: #666666; --muted2: #888888;
+      --accent: #ff4d2e; --mono: 'DM Mono', monospace;
+      --sans: 'DM Sans', sans-serif; --display: 'Syne', sans-serif;
+    }
+    body { background: var(--bg); color: var(--text); font-family: var(--sans); font-size: 16px; line-height: 1.6; min-height: 100vh; }
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1.25rem 2rem; background: rgba(10,10,10,0.85); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+    .nav-logo { font-family: var(--display); font-size: 1.25rem; font-weight: 800; color: var(--accent); text-decoration: none; letter-spacing: -0.02em; }
+    .nav-links { display: flex; align-items: center; gap: 2rem; list-style: none; }
+    .nav-links a { color: var(--muted2); text-decoration: none; font-size: 0.875rem; font-family: var(--mono); transition: color 0.2s; }
+    .nav-links a:hover { color: var(--text); }
+    .legal-page { max-width: 760px; margin: 0 auto; padding: 7rem 2rem 6rem; }
+    .legal-header { margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border); }
+    .legal-header .badge { font-family: var(--mono); font-size: 0.7rem; color: var(--accent); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem; display: block; }
+    .legal-header h1 { font-family: var(--display); font-size: 2.5rem; font-weight: 800; letter-spacing: -0.03em; margin-bottom: 0.75rem; }
+    .legal-header .date { font-family: var(--mono); font-size: 0.8rem; color: var(--muted); }
+    .legal-content h2 { font-family: var(--display); font-size: 1.3rem; font-weight: 700; margin: 2.5rem 0 0.75rem; color: var(--text); }
+    .legal-content h3 { font-family: var(--display); font-size: 1.05rem; font-weight: 600; margin: 1.5rem 0 0.5rem; color: var(--muted2); }
+    .legal-content p { font-size: 0.95rem; color: var(--muted2); line-height: 1.8; margin-bottom: 1rem; }
+    .legal-content ul { margin: 0.75rem 0 1rem 1.5rem; display: flex; flex-direction: column; gap: 0.4rem; }
+    .legal-content ul li { font-size: 0.95rem; color: var(--muted2); line-height: 1.7; }
+    .legal-content ul li::marker { color: var(--accent); }
+    .legal-content .highlight { background: rgba(255,77,46,0.08); border-left: 3px solid var(--accent); padding: 1rem 1.25rem; border-radius: 0 8px 8px 0; margin: 1.5rem 0; }
+    .legal-content .highlight p { margin: 0; font-size: 0.9rem; }
+    .legal-content .contact-box { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-top: 1rem; }
+    .legal-content .contact-box p { margin: 0; }
+    .legal-content .contact-box a { color: var(--accent); text-decoration: none; font-family: var(--mono); }
+    footer { border-top: 1px solid var(--border); padding: 2.5rem 2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-top: 4rem; }
+    .footer-logo { font-family: var(--display); font-weight: 800; color: var(--accent); font-size: 1.1rem; }
+    .footer-links { display: flex; gap: 2rem; list-style: none; }
+    .footer-links a { color: var(--muted); text-decoration: none; font-family: var(--mono); font-size: 0.75rem; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--text); }
+    .footer-copy { font-family: var(--mono); font-size: 0.7rem; color: var(--muted); width: 100%; text-align: center; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="https://inboxreaper.com">InboxReaper</a>
+  <ul class="nav-links">
+    <li><a href="https://inboxreaper.com">Home</a></li>
+    <li><a href="https://inboxreaper.com/privacy.html">Privacy Policy</a></li>
+    <li><a href="https://inboxreaper.com/tos.html">Terms of Service</a></li>
+  </ul>
+</nav>
+
+<div class="legal-page">
+  <div class="legal-header">
+    <span class="badge">// legal</span>
+    <h1>Terms of Service</h1>
+    <p class="date">Effective Date: March 16, 2026</p>
+  </div>
+  <div class="legal-content">
+    <p>Please read these Terms of Service ("Terms") carefully before using InboxReaper. By installing or using InboxReaper, you agree to be bound by these Terms.</p>
+    <h2>1. About InboxReaper</h2>
+    <p>InboxReaper is a Chrome Extension that allows users to bulk-delete emails from their Gmail inbox, grouped by sender. It is an independent product and is not affiliated with Google LLC.</p>
+    <h2>2. Eligibility</h2>
+    <p>You must be at least 13 years of age to use InboxReaper. By using the extension, you represent that you meet this requirement.</p>
+    <h2>3. Your Google Account and Data</h2>
+    <h3>3.1 Authorisation</h3>
+    <p>InboxReaper requires access to your Gmail account via Google's OAuth 2.0 authentication. By signing in, you authorise InboxReaper to read email metadata and move selected emails to your Gmail Trash. You can revoke this access at any time via myaccount.google.com/permissions.</p>
+    <h3>3.2 Your Responsibility</h3>
+    <p>You are solely responsible for the emails you choose to trash using InboxReaper. Trashed emails are moved to Gmail's Trash folder and are permanently deleted by Gmail after 30 days unless restored manually. We strongly recommend reviewing selections carefully before trashing.</p>
+    <h3>3.3 No Warranty on Email Actions</h3>
+    <p>While InboxReaper takes care to accurately identify and move selected emails, we cannot guarantee all actions will be executed without error. Gmail API rate limits, network interruptions, or other technical issues may cause some emails to not be trashed as expected.</p>
+    <h2>4. Free Quota and Paid Access</h2>
+    <h3>4.1 Free Quota</h3>
+    <p>InboxReaper provides a free quota of 300 emails that can be trashed across all sessions. This quota is tracked per Google account.</p>
+    <h3>4.2 Unlimited Cleaning Pass</h3>
+    <p>Once your free quota is exhausted, you may purchase a 48-hour Unlimited Cleaning Pass for ₹99. This pass:</p>
+    <ul><li>Grants unlimited email trashing for 48 hours from the time of purchase</li><li>Is tied to your Google account</li><li>Is valid across devices signed in with the same Google account</li><li>Expires automatically after 48 hours</li></ul>
+    <h2>5. Payments and Refunds</h2>
+    <h3>5.1 Payment Processing</h3>
+    <p>Payments are processed by Razorpay Financial Solutions Pvt. Ltd. We accept UPI, credit/debit cards, and net banking as supported by Razorpay.</p>
+    <h3>5.2 No Refunds</h3>
+    <div class="highlight"><p>All purchases are final and non-refundable. Because the 48-hour pass provides immediate digital access upon purchase, we do not offer refunds once activated. Exceptions may be made at our sole discretion in cases of verified technical failure.</p></div>
+    <h3>5.3 Failed Payments</h3>
+    <p>If your payment fails, no charges will be applied. If you are charged but do not receive access, contact us within 48 hours with your payment details.</p>
+    <h2>6. Acceptable Use</h2>
+    <p>You agree not to use InboxReaper to:</p>
+    <ul><li>Violate any applicable law or regulation</li><li>Access or trash emails belonging to accounts you do not own</li><li>Reverse-engineer, decompile, or tamper with the extension or its backend</li><li>Use automated scripts or bots beyond normal usage</li><li>Circumvent or bypass the free quota or payment system</li></ul>
+    <h2>7. Intellectual Property</h2>
+    <p>InboxReaper, including its name, logo, design, code, and content, is the intellectual property of its developers. You are granted a limited, non-exclusive, non-transferable licence to use the extension for personal, non-commercial purposes.</p>
+    <h2>8. Disclaimers</h2>
+    <h3>8.1 Service Availability</h3>
+    <p>InboxReaper is provided "as is" and "as available." We do not guarantee the service will be uninterrupted or error-free. We may suspend or discontinue the service at any time without notice.</p>
+    <h3>8.2 No Endorsement by Google</h3>
+    <p>InboxReaper is an independent product. It is not endorsed, certified, or affiliated with Google LLC. Google and Gmail are trademarks of Google LLC.</p>
+    <h3>8.3 Email Loss</h3>
+    <p>We are not responsible for any emails permanently deleted as a result of using InboxReaper. Gmail's 30-day Trash retention is your safety net. Use InboxReaper responsibly.</p>
+    <h2>9. Limitation of Liability</h2>
+    <p>To the fullest extent permitted by applicable law, InboxReaper and its developers shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of InboxReaper, including loss of data, emails, or revenue. Our total liability shall not exceed the amount you paid us in the 30 days preceding the claim.</p>
+    <h2>10. Indemnification</h2>
+    <p>You agree to indemnify and hold harmless InboxReaper and its developers from any claims, losses, damages, or expenses arising from your use of the service or your violation of these Terms.</p>
+    <h2>11. Termination</h2>
+    <p>We reserve the right to suspend or terminate your access at any time, with or without cause, if we believe you have violated these Terms or are using the service in a harmful manner.</p>
+    <h2>12. Governing Law</h2>
+    <p>These Terms are governed by the laws of India. Any disputes shall be subject to the exclusive jurisdiction of the courts of India.</p>
+    <h2>13. Changes to These Terms</h2>
+    <p>We may update these Terms from time to time. Your continued use of InboxReaper after changes are posted constitutes acceptance of the updated Terms.</p>
+    <h2>14. Contact Us</h2>
+    <div class="contact-box">
+      <p>For questions or support: <a href="mailto:support@inboxreaper.com">support@inboxreaper.com</a></p>
+      <p style="margin-top:0.5rem; color: var(--muted); font-size:0.85rem;">We respond to all enquiries within 7 business days.</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">InboxReaper</div>
+  <ul class="footer-links">
+    <li><a href="https://inboxreaper.com">Home</a></li>
+    <li><a href="https://inboxreaper.com/privacy.html">Privacy Policy</a></li>
+    <li><a href="mailto:support@inboxreaper.com">Contact</a></li>
+  </ul>
+  <p class="footer-copy">© 2026 InboxReaper. Not affiliated with Google LLC.</p>
+</footer>
+
+</body>
+</html>
