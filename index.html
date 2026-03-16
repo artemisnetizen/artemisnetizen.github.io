@@ -94,11 +94,11 @@
 <body>
 
 <nav>
-  <a class="nav-logo" href="https://inboxreaper.com" onclick="showPage('home')">InboxReaper</a>
+  <a class="nav-logo" href="https://inboxreaper.com" onclick="showPage('home'); return false;">InboxReaper</a>
   <ul class="nav-links">
-    <li><a href="https://inboxreaper.com" onclick="showPage('home')">Home</a></li>
-    <li><a href="https://inboxreaper.com/#privacy" onclick="showPage('privacy')">Privacy Policy</a></li>
-    <li><a href="https://inboxreaper.com/#tos" onclick="showPage('tos')">Terms of Service</a></li>
+    <li><a href="https://inboxreaper.com" onclick="showPage('home'); return false;">Home</a></li>
+    <li><a href="https://inboxreaper.com/#privacy" onclick="showPage('privacy'); return false;">Privacy Policy</a></li>
+    <li><a href="https://inboxreaper.com/#tos" onclick="showPage('tos'); return false;">Terms of Service</a></li>
   </ul>
 </nav>
 
@@ -169,9 +169,9 @@
   <footer>
     <div class="footer-logo">InboxReaper</div>
     <ul class="footer-links">
-      <li><a href="https://inboxreaper.com/#privacy" onclick="showPage('privacy')">Privacy Policy</a></li>
-      <li><a href="https://inboxreaper.com/#tos" onclick="showPage('tos')">Terms of Service</a></li>
-      <li><a href="mailto:support@inboxreaper.com">Contact</a></li>
+      <li><a href="https://inboxreaper.com/#privacy" onclick="showPage('privacy'); return false;">Privacy Policy</a></li>
+      <li><a href="https://inboxreaper.com/#tos" onclick="showPage('tos'); return false;">Terms of Service</a></li>
+      <li><a href="/cdn-cgi/l/email-protection#acdfd9dcdcc3ded8ecc5c2cec3d4dec9cddcc9de82cfc3c1">Contact</a></li>
     </ul>
     <p class="footer-copy">© 2026 InboxReaper. Not affiliated with Google LLC. Gmail is a trademark of Google LLC.</p>
   </footer>
@@ -226,7 +226,7 @@
       <p>We may update this Privacy Policy from time to time. Continued use of InboxReaper after changes constitutes your acceptance of the updated policy.</p>
       <h2>11. Contact Us</h2>
       <div class="contact-box">
-        <p>For questions or data requests, contact us at: <a href="mailto:privacy@inboxreaper.com">privacy@inboxreaper.com</a></p>
+        <p>For questions or data requests, contact us at: <a href="/cdn-cgi/l/email-protection#7707051e0116140e371e1915180f0512160712055914181a"><span class="__cf_email__" data-cfemail="8dfdffe4fbeceef4cde4e3efe2f5ffe8ecfde8ffa3eee2e0">[email&#160;protected]</span></a></p>
         <p style="margin-top:0.5rem; color: var(--muted); font-size:0.85rem;">We respond to all enquiries within 7 business days.</p>
       </div>
     </div>
@@ -234,9 +234,9 @@
   <footer>
     <div class="footer-logo">InboxReaper</div>
     <ul class="footer-links">
-      <li><a href="https://inboxreaper.com" onclick="showPage('home')">Home</a></li>
-      <li><a href="https://inboxreaper.com/#tos" onclick="showPage('tos')">Terms of Service</a></li>
-      <li><a href="mailto:support@inboxreaper.com">Contact</a></li>
+      <li><a href="https://inboxreaper.com" onclick="showPage('home'); return false;">Home</a></li>
+      <li><a href="https://inboxreaper.com/#tos" onclick="showPage('tos'); return false;">Terms of Service</a></li>
+      <li><a href="/cdn-cgi/l/email-protection#61121411110e131521080f030e191304001104134f020e0c">Contact</a></li>
     </ul>
     <p class="footer-copy">© 2026 InboxReaper. Not affiliated with Google LLC.</p>
   </footer>
@@ -300,7 +300,7 @@
       <p>We may update these Terms from time to time. Your continued use of InboxReaper after changes are posted constitutes acceptance of the updated Terms.</p>
       <h2>14. Contact Us</h2>
       <div class="contact-box">
-        <p>For questions or support: <a href="mailto:support@inboxreaper.com">support@inboxreaper.com</a></p>
+        <p>For questions or support: <a href="/cdn-cgi/l/email-protection#a2d1d7d2d2cdd0d6e2cbccc0cddad0c7c3d2c7d08cc1cdcf"><span class="__cf_email__" data-cfemail="087b7d7878677a7c4861666a67707a6d69786d7a266b6765">[email&#160;protected]</span></a></p>
         <p style="margin-top:0.5rem; color: var(--muted); font-size:0.85rem;">We respond to all enquiries within 7 business days.</p>
       </div>
     </div>
@@ -308,30 +308,14 @@
   <footer>
     <div class="footer-logo">InboxReaper</div>
     <ul class="footer-links">
-      <li><a href="https://inboxreaper.com" onclick="showPage('home')">Home</a></li>
-      <li><a href="https://inboxreaper.com/#privacy" onclick="showPage('privacy')">Privacy Policy</a></li>
-      <li><a href="mailto:support@inboxreaper.com">Contact</a></li>
+      <li><a href="https://inboxreaper.com" onclick="showPage('home'); return false;">Home</a></li>
+      <li><a href="https://inboxreaper.com/#privacy" onclick="showPage('privacy'); return false;">Privacy Policy</a></li>
+      <li><a href="/cdn-cgi/l/email-protection#780b0d0808170a0c3811161a17000a1d19081d0a561b1715">Contact</a></li>
     </ul>
     <p class="footer-copy">© 2026 InboxReaper. Not affiliated with Google LLC.</p>
   </footer>
 </div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   function showPage(name) {
-    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-    document.getElementById('page-' + name).classList.add('active');
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
-  function toggleFaq(btn) {
-    btn.closest('.faq-item').classList.toggle('open');
-  }
-  function handleHash() {
-    const hash = window.location.hash.replace('#', '') || 'home';
-    const validPages = ['home', 'privacy', 'tos'];
-    if (validPages.includes(hash)) showPage(hash);
-  }
-  window.addEventListener('hashchange', handleHash);
-  handleHash();
-</script>
-</body>
-</html>
+    document.querySelectorAll('.page').forEach(p => p.cla
